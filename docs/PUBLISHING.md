@@ -41,7 +41,7 @@ git push origin vX.Y.Z
 
 1. Go to [Releases → New release](https://github.com/brian-ruf/ruf-common-python/releases/new)
 2. Select tag **`vX.Y.Z`**
-3. Set the title to **`vX.Y.Z`**
+3. Set the title to **`Version X.Y.Z`**
 4. Add release notes summarizing the changes
 5. Click **"Publish release"**
 
