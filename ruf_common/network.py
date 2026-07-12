@@ -1,9 +1,11 @@
+import logging
 import requests
-from loguru import logger
 from . import helper
 import socket
 import aiohttp
 from typing import Any, Optional
+
+logger = logging.getLogger(__name__)
 
 
 def check_internet_connection() -> bool:

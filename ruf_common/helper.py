@@ -18,8 +18,10 @@ import pytz
 from tzlocal import get_localzone
 import json
 import getpass as gt
-from loguru import logger
+import logging
 from typing import Dict, Any, Union
+
+logger = logging.getLogger(__name__)
 
 # -----------------------------------------------------------------------------
 # =============================================================================

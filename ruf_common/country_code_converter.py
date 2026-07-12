@@ -2,7 +2,9 @@
 Python functions to convert country names to ISO 3166-1 alpha-2 country codes.
 Provides multiple approaches from simple dictionary lookup to library-based solutions.
 """
-from loguru import logger
+import logging
+
+logger = logging.getLogger(__name__)
 
 # Method 1: Simple dictionary approach (most common countries)
 COUNTRY_TO_CODE = {
