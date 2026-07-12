@@ -1,4 +1,10 @@
-from loguru import logger
+import logging
+
+# The library emits log records but installs no handler of its own, so it stays
+# silent unless the calling application configures logging. Consumers enable it
+# with e.g. ``logging.getLogger("ruf_common").setLevel(logging.INFO)`` plus a
+# handler of their choosing. See docs/LOGGING.md.
+logging.getLogger("ruf_common").addHandler(logging.NullHandler())
 
 from . import country_code_converter
 from . import data
@@ -7,14 +13,9 @@ from . import helper
 from . import html_to_markdown
 from . import lfs
 from . import network
-from . import logging
 from . import stats
 from . import timezone_lookup
 from . import xml_formatter
-
-# Disable logging by default; consumers can enable with:
-#   logger.enable("ruf_common")
-logger.disable("ruf_common")
 
 __all__ = [
     "data",
@@ -22,7 +23,6 @@ __all__ = [
     "lfs",
     "helper",
     "network",
-    "logging",
     "stats",
     "country_code_converter",
     "html_to_markdown",

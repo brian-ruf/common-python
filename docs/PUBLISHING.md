@@ -27,14 +27,15 @@ git commit -m "Bump version to vX.Y.Z"
 git push
 ```
 
-### 3. Tag the commit
+### 3. Merge with Main
+https://github.com/brian-ruf/ruf-common-python/pulls
+
+### 4. Tag the commit
 
 ```bash
 git tag vX.Y.Z
 git push origin vX.Y.Z
 ```
-
-### 4. Merge with Main
 
 ### 5. Create the GitHub Release
 

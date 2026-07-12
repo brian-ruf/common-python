@@ -3,9 +3,11 @@ SQLite3 Functions: Functions that are specific to use of SQLite3. ---
 These functions assume that the SQLite3 database is already created and
 """
 import os
-from loguru import logger
+import logging
 import pickle
 from typing import Any, Optional, Dict
+
+logger = logging.getLogger(__name__)
 import zlib
 import sqlite3
 from .helper import convert_datetime_format

@@ -6,9 +6,11 @@ from __future__ import annotations
 import elementpath
 import xml.etree.ElementTree as ET
 from xml.etree.ElementTree import tostring
-from loguru import logger
+import logging
 
 from typing import Any, cast
+
+logger = logging.getLogger(__name__)
 
 # -------------------------------------------------------------------------
 def detect_data_format(content: str) -> str:

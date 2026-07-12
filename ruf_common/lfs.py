@@ -4,9 +4,11 @@ import os
 import errno
 import sys
 import json
+import logging
 from ruf_common.helper import normalize_content, datetime_string
-from loguru import logger
 from pathlib import Path
+
+logger = logging.getLogger(__name__)
 # from datetime import datetime
 
 # =============================================================================

@@ -14,10 +14,12 @@ All operations are now synchronous.
 # =============================================================================
 import sqlite3
 import uuid as uuid_module
+import logging
 from typing import Any, Optional, Union
-from loguru import logger
-from . import helper 
+from . import helper
 from . import database_sqlite3
+
+logger = logging.getLogger(__name__)
 # import asyncio
 
 # List of supported databses:
